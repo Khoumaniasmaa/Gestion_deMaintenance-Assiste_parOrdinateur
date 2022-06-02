@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="template1" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Accueil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+          crossorigin="anonymous">
+
+</head>
+<body>
+<div layout:fragment="content1">
+
+    <div class="tabs" id="about">
+        <div class="container">
+            <div class="t-head">
+                <h3 class="head">POURQUOI NOUS CHOISIR GMAO CAR?</h3>
+            </div>
+            <br>
+            <div class="tabs-grids">
+                <div id="parentVerticalTab">
+                    <div class="resp-tabs-container hor_1">
+                        <div class="text agile-info">
+                            <br>
+                            <h4>LAVE-AUTO</h4>
+                            <p>Un lavage maison qui vous permet de nettoyer amoureusement votre bolide est une activité bien sympathique qui donne d'excellent résultats. Mais, nous n'avons pas tous le temps ou la détermination pour le faire. L'autre solution ? Utiliser un lave-auto commercial. D'autant plus que la plupart d'entre eux offrent des prix réduits si vous faites le plein d'essence au même établissement.</p>
+                            <p>L'aspect non négligeable d'un nettoyage professionnel est l'intérêt écologique : contrairement au lavage effectué par un particulier, les sociétés de nettoyage sont contrôlées drastiquement et leur installation de vidange des eaux usées comportent un système de recyclage et de filtrage garantissant un minimum de consommation d'eau et de rejets.</p>
+                            <br>
+                           <center><img src="../img/6.jpg" alt=" " class="img-responsive" /></center>
+
+                        </div>
+<br>
+                        <div class="text agile-info">
+                            <h4>RÉPARATION AUTOMOBILE</h4>
+                            <p>En cas de panne de voiture, la réparation de l'automobile est indispensable. Cela peut aller de la mécanique ou de la carrosserie, à la réparation du radiateur de voiture à la réparation d'un siège d'automobile.</p>
+                            <p>Une panne de voiture entraîne souvent des frais de réparation automobile importants.Lorsque le véhicule connaît des problèmes mécaniques, ne tardez pas pour la faire réparer.</p>
+                           <br>
+                            <center><img src="../img/9.jpg" alt=" " class="img-responsive" /></center>
+
+                        </div>
+                        <br>
+                        <div class="text agile-info">
+                            <h4>SOUDURE VOITURE</h4>
+                            <p>La soudure est le plus couramment utiliser pour la carrosserie et les gros travaux structurels.</p>
+                            <p>Les blocs avant et arrière des voitures modernes utilisent des structures déformables. Lors d'un accident, les pièces de carrosserie absorbent l'énergie cinétique des chocs. Cela contribue à la sécurité des occupants. Techniquement, la progressivité des déformations dépend autant de la qualité et de l'épaisseur des tôles que de leur mode de soudage. Trop soudé, un longeron, accosté sur son passage de roue, aura tendance à se rigidifier, reportant la violence de l'impact sur l'habitacle.</p>
+                           <br>
+                            <center><img src="../img/7.jpg" alt=" " class="img-responsive" /></center>
+
+                        </div>
+
+
+                        <br>
+                        <div class="text agile-info">
+                            <h4>LIVRAISON DE VOITURE</h4>
+                            <p>la livraison de la voiture est disponible chez nous. Nous vous livre votre voiture après réparation en toute sécurité</p>
+
+                          <br>
+                           <center><img src="../img/5.jpg"  alt=" " class="img-responsive" /></center>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--//what-we-do-->
+
+    <div class="w3agile_footer_copy">
+        <p>&copy; 2022 GMAO<a href="http://w3layouts.com/"></a></p>
+    </div>
+    <a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+    <!-- //footer -->
+    <!-- js files -->
+    <!-- swipe box js -->
+    <script src="../js/jquery-2.2.3.min.js"></script>
+    <script src="../js/jquery.pogo-slider.min.js"></script>
+    <script src="../js/main.js"></script>
+    <!-- /js files -->
+    <!-- Starts-Number-Scroller-Animation-JavaScript -->
+    <script src="../js/waypoints.min.js"></script>
+    <script src="../js/counterup.min.js"></script>
+    <script>
+        jQuery(document).ready(function( $ ) {
+            $('.counter').counterUp({
+                delay: 20,
+                time: 1000
+            });
+        });
+    </script>
+    <!-- //Starts-Number-Scroller-Animation-JavaScript -->
+    <script type="text/javascript">
+        $(window).load(function() {
+            $("#flexiselDemo1").flexisel({
+                visibleItems: 4,
+                animationSpeed: 1000,
+                autoPlay: true,
+                autoPlaySpeed: 3000,
+                pauseOnHover: true,
+                enableResponsiveBreakpoints: true,
+                responsiveBreakpoints: {
+                    portrait: {
+                        changePoint:480,
+                        visibleItems: 1
+                    },
+                    landscape: {
+                        changePoint:640,
+                        visibleItems:2
+                    },
+                    tablet: {
+                        changePoint:768,
+                        visibleItems: 3
+                    }
+                }
+            });
+
+        });
+    </script>
+    <script type="text/javascript" src="../js/jquery.flexisel.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/easy-responsive-tabs.css " />
+    <script src="../js/easyResponsiveTabs.js"></script>
+    <!--Plug-in Initialisation-->
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            //Vertical Tab
+            $('#parentVerticalTab').easyResponsiveTabs({
+                type: 'vertical', //Types: default, vertical, accordion
+                width: 'auto', //auto or any width like 600px
+                fit: true, // 100% fit in a container
+                closed: 'accordion', // Start closed if in accordion view
+                tabidentify: 'hor_1', // The tab groups identifier
+                activate: function(event) { // Callback function if tab is switched
+                    var $tab = $(this);
+                    var $info = $('#nested-tabInfo2');
+                    var $name = $('span', $info);
+                    $name.text($tab.text());
+                    $info.show();
+                }
+            });
+        });
+    </script>
+    <!--/script-->
+
+    <script type="text/javascript" src="../js/move-top.js"></script>
+    <script type="text/javascript" src="../js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+            });
+        });
+    </script>
+    <!-- swipe box js -->
+    <script src="../js/jquery.swipebox.min.js"></script>
+    <script type="text/javascript">
+        jQuery(function($) {
+            $(".swipebox").swipebox();
+        });
+    </script>
+    <!-- //swipe box js -->
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            /*
+            var defaults = {
+                  containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear'
+             };
+            */
+
+            $().UItoTop({ easingType: 'easeOutQuart' });
+
+        });
+    </script>
+
+    <!--end-smooth-scrolling-->
+    <script src="../js/bootstrap.js"></script>
+
+</div></body>
+</html>
